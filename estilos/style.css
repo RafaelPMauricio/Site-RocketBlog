@@ -1,1 +1,147 @@
 @charset "UTF-8";
+
+:root {
+    --purple-bg: #290742;
+    --dark-bg: #170027;
+    --button-bg: #9e6dc2;
+    --white: #fff;
+    --light-purple: #fbf6ff;
+    --green: #4fff4b;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+#home {
+    background-color: var(--purple-bg);
+    margin: 0 auto;
+}
+
+header{
+    padding: 64px 136px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+header > *{
+    display: inline-block;
+}
+
+nav{
+    margin: auto;
+}
+
+ul{
+    display: flex;
+    width: 343px;
+    height: 21px;
+    justify-content: space-between;
+}
+
+li{
+    list-style-type: none;
+    font-weight: 400;
+}
+
+li > a{
+    color: var(--white);
+}
+
+li:first-child{
+    font-weight: 700;
+}
+
+li:first-child::before{
+    width: 15px;
+    background-color: var(--green);
+}
+
+div#pesquisa{
+    display: flex;
+}
+
+div#pesquisa > input{
+    background-color: var(--dark-bg);
+    height: 44px;
+    border: none;
+    padding: 10px;
+    margin-right: 0;
+    border-radius: 4px 0 0 4px;
+    color: white;
+}
+
+div#pesquisa > button{
+    background-color: var(--button-bg);
+    width: 70px;
+    height: 44px;
+    margin-left: 0;
+    border: none;
+    border-radius: 0 4px 4px 0;
+}
+
+article#principal{
+    display: flex;
+    padding: 0 136px 64px;
+}
+
+article#principal > section{
+    width: 570px;
+    height: 311px;
+    color: white;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+}
+
+article#principal > section > *{
+    flex: 1;
+}
+
+article#principal > section > h1{
+    font-family: 'Poppins', sans-serif;
+    color: var(--button-bg);
+    font-weight: 700;
+    line-height: 27px;
+    text-transform: uppercase;
+}
+
+article#principal > section > p{
+    line-height: 27px;
+}
+
+article#principal > section > a{
+    color: var(--button-bg);
+    display: flex;
+    width: 112px;
+    height: 27px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+article#principal > img{
+    width: 570px;
+    height: 346px;
+}
+
+body > hr{
+    height: 6px;
+    background-color: var(--green);
+}
+
+aside > hr{
+    height: 1px;
+    width: 470px;
+    background-color: #F2E7FA;
+}
+
+a{
+    text-decoration: none;
+}

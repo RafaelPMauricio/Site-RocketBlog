@@ -6,8 +6,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RocketBlog</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <div id="home">
+        <header>
+            <a href="#"><img src="images/logo.svg" alt="Logo do Blog, The Blog"></a>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Categorias</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+            <div id="pesquisa">
+                <input type="text" name="search" id="search" placeholder="Buscar">
+                <button>
+                    <img src="images/search.svg" alt="Botão de busca">
+                </button>
+            </div>
+        </header>
+        <article id="principal">
+            <section>
+                <h1>Veja o guia definitivo para conquistar seus objetivos como DEV em 2022</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat perferendis esse, mollitia numquam, blanditiis tenetur omnis amet molestiae accusantium atque nisi provident commodi rem veritatis laborum iusto nesciunt aliquid? Maxime.</p>
+                <a href="#">Veja mais <img src="images/arrow-right.svg" alt="Seta para veja mais"></a>
+            </section>
+            <img src="images/featured-image.png" alt="Imagem principal do site">
+        </article>
+    </div>
+    <hr>
+    <main>
+        <section id="highlight">
+            <article id="post-1">
+                <figure>
+                    <img src="images/post-1.png" alt="Imagem do primeiro post">
+                    <figcaption>Janeiro 04, 2022</figcaption>
+                </figure>
+                <h2><a href="#">Começando no ReactJS em 2022</a></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quidem explicabo nam autem quod, repellat consectetur facilis voluptate. Vero quia labore ea architecto reiciendis cumque. Autem quae nisi porro quibusdam.</p>
+            </article>
+        </section>
+        <aside>
+            <article>
+                <p>Janeiro 04, 2022</p>
+                <h2><a href="#">Concheça as principais técnicas para conseguir uma vaga internacional em programação</a></h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non laudantium laborum nostrum nobis eligendi quos sit debitis nam totam, enim earum maxime odio quasi libero!</p>
+            </article>
+            <hr>
+            <article>
+                <p>Janeiro 04, 2022</p>
+                <h2><a href="#">Veja a evolução do Front-end na prática</a></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ab magni eius, labore blanditiis inventore, ad itaque atque.</p>
+            </article>
+        </aside>
+        <section id="sub">
+            <article id="post-2">
+                <figure>
+                    <img src="images/post-2.png" alt="Imagem do Sgundo post">
+                    <figcaption>Janeiro 04, 2022</figcaption>
+                </figure>
+                <h2><a href="#">10 dicas para conseguir a vaga desejada</a></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quidem explicabo nam autem quod, repellat consectetur facilis voluptate. Vero quia labore ea architecto reiciendis cumque.</p>
+            </article>
+            <article id="post-3">
+                <figure>
+                    <img src="images/post-3.png" alt="Imagem do primeiro post">
+                    <figcaption>Janeiro 04, 2022</figcaption>
+                </figure>
+                <h2><a href="#">Deixe seu código mais semântico com esses dicas</a></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quidem explicabo nam autem quod, repellat consectetur facilis voluptate. Vero quia labore ea architecto reiciendis cumque.</p>
+            </article>
+            <article id="post-4">
+                <figure>
+                    <img src="images/post-4.png" alt="Imagem do primeiro post">
+                    <figcaption>Janeiro 04, 2022</figcaption>
+                </figure>
+                <h2><a href="#">Use essas dicas nas suas aplicações mobile</a></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quidem explicabo nam autem quod, repellat consectetur facilis voluptate. Vero quia labore ea architecto reiciendis cumque.</p>
+            </article>
+        </section>
+    </main>
 </body>
 </html>
