@@ -73,8 +73,12 @@
         width: 100%;
     }
 
+    article#principal > section > p{
+        width: 95%;
+    }
+
     article#principal > img{
-        padding-top: 50px;
+        margin-top: 2rem;
         width: 90%;
     }
 
