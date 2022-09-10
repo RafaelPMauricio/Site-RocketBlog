@@ -1,5 +1,8 @@
 @charset "UTF-8";
 
+/* Estilos gerais para o site */
+
+/* Variaveis para as cores usadas */
 :root {
     --purple-bg: #290742;
     --dark-bg: #170027;
@@ -9,25 +12,30 @@
     --green: #4fff4b;
 }
 
+/* Resetando margens e paddings de toda a página */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Retirando decorações de links */
 a{
     text-decoration: none;
 }
 
+/* Colocando a fonte mais usada */
 body {
     font-family: 'Roboto', sans-serif;
 }
 
+/* Configurando o fundo da apresentação do site */
 #home {
     background-color: var(--purple-bg);
     padding-bottom: 64px;
 }
 
+/* Configurando o cabeçalho do site */
 header{
     padding: 64px 0;
     max-width: 1170px;
@@ -36,16 +44,14 @@ header{
     justify-content: space-between;
     align-items: center;
 }
-
 header > *{
-    display: inline-block;
     flex-shrink: 1;
 }
-
 header > a{
     max-width: 162px;
 }
 
+/* Configurando o layout lista de navegação */
 ul{
     display: flex;
     flex-wrap: wrap;
@@ -54,27 +60,26 @@ ul{
     justify-content: space-between;
 }
 
+/* Configurando os items de navegação */
 li{
     list-style-type: none;
     font-weight: 400;
 }
-
 li > a{
     color: var(--white);
 }
-
 li:first-child{
     font-weight: 700;
     padding-left: 5px;
     border-left: 2px solid var(--green);
 }
 
+/* Configurando o layout da área para pesquisa  */
 div#pesquisa{
     display: flex;
     width: 270px;
     justify-content: flex-end;
 }
-
 div#pesquisa > input{
     background-color: var(--dark-bg);
     height: 44px;
@@ -83,7 +88,6 @@ div#pesquisa > input{
     border-radius: 4px 0 0 4px;
     color: white;
 }
-
 div#pesquisa > button{
     background-color: var(--button-bg);
     width: 70px;
@@ -92,6 +96,7 @@ div#pesquisa > button{
     border-radius: 0 4px 4px 0;
 }
 
+/* Configurando a caixa do artigo em destaque */
 article#principal{
     display: flex;
     margin: auto;
@@ -100,10 +105,12 @@ article#principal{
     justify-content: space-between;
 }
 
+/* Configuração dos filhos */
 article#principal > *{
     width: 50%;
 }
 
+/* Configuração da caixa de textos em destaque */
 article#principal > section{
     max-width: 570px;
     height: 311px;
@@ -114,10 +121,10 @@ article#principal > section{
     align-content: space-between;
 }
 
+/* Configuração dos textos em destaque */
 article#principal > section > *{
     line-height: 27px;
 }
-
 article#principal > section > h1{
     font-family: 'Poppins', sans-serif;
     color: var(--button-bg);
@@ -125,11 +132,9 @@ article#principal > section > h1{
     font-size: 36px;
     line-height: 54px;
 }
-
 article#principal > section > p{
     width: 469px;
 }
-
 article#principal > section > a{
     color: var(--button-bg);
     display: flex;
@@ -139,16 +144,19 @@ article#principal > section > a{
     align-items: center;
 }
 
+/* Configuração da imagem em destaque */
 article#principal > img{
     max-width: 570px;
     max-height: 346px;
 }
 
+/* Linha de separação */
 body > hr{
     height: 6px;
     background-color: var(--green);
 }
 
+/* Caixa com os artigos */
 main{
     max-width: 1170px;
     margin: auto;
@@ -162,42 +170,46 @@ main{
     column-gap: 30px;
 }
 
+/* Imagem dos artigos postados */
 main img{
     width: 95%;
 }
 
+/* Configurações do artigo 1 */
 article#post-1{
     grid-area: post1;
 }
-
 article#post-1 > figure > img {
     max-width: 569px;
 }
-
 article#post-1 > h2{
     line-height: 36px;
 }
-
 article#post-1 > p{
     line-height: 24px;
 }
 
+/* Configuração do artigo 2 */
 article#post-2{
     grid-area: post2;
 }
 
+/* Configuração do artigo 3 */
 article#post-3{
     grid-area: post3;
 }
 
+/* Configuração do artigo 4 */
 article#post-4{
     grid-area: post4;
 }
 
+/* Configuração da caixa de artigos extras */
 main > aside{
     grid-area: aside;
 }
 
+/* Linha entres os artigos extras */
 aside > hr{
     height: 1px;
     width: 470px;
