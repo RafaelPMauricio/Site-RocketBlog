@@ -30,20 +30,25 @@ body {
 
 header{
     padding: 64px 0;
-    width: 1170px;
+    max-width: 1170px;
     margin: auto;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
 
 header > *{
     display: inline-block;
+    flex-shrink: 1;
+}
+
+header > a{
+    max-width: 162px;
 }
 
 ul{
     display: flex;
+    flex-wrap: wrap;
     width: 343px;
     height: 21px;
     justify-content: space-between;
@@ -66,6 +71,8 @@ li:first-child{
 
 div#pesquisa{
     display: flex;
+    width: 270px;
+    justify-content: flex-end;
 }
 
 div#pesquisa > input{
@@ -73,7 +80,6 @@ div#pesquisa > input{
     height: 44px;
     border: none;
     padding: 10px;
-    margin-right: 0;
     border-radius: 4px 0 0 4px;
     color: white;
 }
@@ -82,7 +88,6 @@ div#pesquisa > button{
     background-color: var(--button-bg);
     width: 70px;
     height: 44px;
-    margin-left: 0;
     border: none;
     border-radius: 0 4px 4px 0;
 }
@@ -90,14 +95,13 @@ div#pesquisa > button{
 article#principal{
     display: flex;
     margin: auto;
-    width: 1170px;
+    max-width: 1170px;
     height: 346px;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 article#principal > section{
-    width: 570px;
+    max-width: 570px;
     height: 311px;
     color: white;
     font-weight: 400;
@@ -107,7 +111,6 @@ article#principal > section{
 }
 
 article#principal > section > *{
-    flex: 1;
     line-height: 27px;
 }
 
@@ -133,8 +136,8 @@ article#principal > section > a{
 }
 
 article#principal > img{
-    width: 570px;
-    height: 346px;
+    max-width: 570px;
+    max-height: 346px;
 }
 
 body > hr{
@@ -143,11 +146,11 @@ body > hr{
 }
 
 main{
-    width: 1170px;
+    max-width: 1170px;
     margin: auto;
     padding-top: 64px;
     display: grid;
-    grid-template-columns: 370px 185px 70px 55px 370px;
+    grid-template-columns: 2fr 1fr 0.2fr 0.4fr 2fr;
     grid-template-rows: 546px 460px;
     grid-template-areas:
      "post1 post1 . aside aside"
