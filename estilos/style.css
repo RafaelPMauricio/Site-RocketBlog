@@ -171,7 +171,7 @@ article#post-1{
 }
 
 article#post-1 > figure > img {
-    width: 569px;
+    max-width: 569px;
 }
 
 article#post-1 > h2{

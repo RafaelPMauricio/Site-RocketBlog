@@ -20,6 +20,19 @@
     }
 
     main{
+        display: flex;
+        flex-direction: column;
+    }
+
+    main > * {
+        margin: 20px 0;
+    }
+
+    main > article img {
+        max-width: 370px;
+    }
+/*
+    main{
         grid-template-columns: 90vw;
         grid-template-rows: 428px 370px 400px 400px 300px;
         grid-template-areas:
@@ -35,7 +48,7 @@
 
     main img{
         width: 370px;
-    }
+    }*/
     
 }
 
@@ -73,16 +86,12 @@
         width: 90%;
         height: 260px;
     }
-
+/*
     article#post-1 > figure > img{
         width: 370px;
     }
 
     main > article > figure > img{
         
-    }
-
-    main{
-        margin-bottom: 50px;
-    }
+    } */
 }
