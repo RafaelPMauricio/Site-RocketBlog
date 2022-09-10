@@ -66,20 +66,23 @@
     article#principal{
         flex-direction: column;
         align-content: space-between;
+        align-content: space-between;
+        height: 600px;
     }
 
     article#principal > section{
         margin: auto;
         width: 100%;
+        height: 500px;
     }
 
     article#principal > section > p{
-        width: 95%;
+        width: 100%;
     }
 
     article#principal > img{
-        margin-top: 2rem;
         width: 90%;
+        height: 260px;
     }
 
     article#post-1 > figure > img{
